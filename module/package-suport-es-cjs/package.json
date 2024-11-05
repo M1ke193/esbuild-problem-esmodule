@@ -1,0 +1,26 @@
+{
+  "name": "package-suport-es-cjs",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "main": "./cjs/index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./esm/index.js",
+        "types": "./index.d.ts"
+      },
+      "require": {
+        "default": "./cjs/index.js",
+        "types": "./index.d.ts"
+      }
+    }
+  }
+}

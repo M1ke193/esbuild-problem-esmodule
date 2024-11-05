@@ -1,0 +1,24 @@
+{
+  "name": "package-commonjs-module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "build": "tsc -p ./tsconfig.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "typescript": "^5.6.3"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "package-es-module": "file:../package-es-module",
+    "package-suport-es-cjs": "file:../package-suport-es-cjs"
+  }
+}
