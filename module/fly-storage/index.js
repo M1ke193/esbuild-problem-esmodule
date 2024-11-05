@@ -1,4 +1,4 @@
-export async function normalFunction() {
+function normalFunction() {
     console.log("this is normal function not cause any problem")
 }
 
@@ -9,3 +9,4 @@ async function resolveMimeType() {
 
 exports.normalFunction = normalFunction;
 exports.resolveMimeType = resolveMimeType;
+
