@@ -9,7 +9,8 @@
     "typescript": "^5.6.3"
   },
   "scripts": {
-    "start": "tsc && node dist/index.js"
+    "start": "tsc && node dist/index.js",
+    "esbuild":"npx esbuild --bundle --platform=node --outfile=./bundled/index.js index.ts"
   },
   "dependencies": {
     "esbuild": "^0.24.0",
